@@ -1,0 +1,45 @@
+{
+	"name": "SourceDataset_jym",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "sets.csv.gz"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"compressionCodec": "gzip",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "0011-2",
+				"type": "String"
+			},
+			{
+				"name": "Town Mini-Figures",
+				"type": "String"
+			},
+			{
+				"name": "1979",
+				"type": "String"
+			},
+			{
+				"name": "67",
+				"type": "String"
+			},
+			{
+				"name": "12",
+				"type": "String"
+			}
+		]
+	}
+}
